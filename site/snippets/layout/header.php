@@ -10,7 +10,11 @@ $htmlTitle = $htmlTitle ?? false;
         <meta name=viewport content="width=device-width, initial-scale=1">
         <meta name="description" content="<?= $site->description()->html() ?>">
         <title><? ecco($htmlTitle, $htmlTitle . ' - ') ?><?= $site->title() ?></title>
-        <?= css('assets/css/build.css') ?>
+        <?= css([
+                'assets/css/build.css',
+                'https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i',
+                'https://fonts.googleapis.com/icon?family=Material+Icons'
+            ]) ?>
     </head>
     <body>
         <div class="app-root">
