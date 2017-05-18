@@ -1,0 +1,29 @@
+# Libraries
+# ---------
+/node_modules/*
+/vendor/*
+
+# System files
+# ------------
+Icon
+.DS_Store
+
+# Temporary files
+# ---------------
+/content/*
+/thumbs/*
+!/thumbs/index.html
+/site/cache/*
+!/site/cache/index.html
+
+# Kirby accounts
+# ---------------
+
+/site/accounts/*
+!/site/accounts/index.html
+
+# Avatars
+# ---------------
+
+/assets/avatars/*
+!/assets/avatars/index.html

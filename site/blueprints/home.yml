@@ -1,0 +1,62 @@
+title: Home
+
+pages:
+    template: project
+
+fields:
+    title:
+        label: Title
+        type:  text
+
+    text:
+        label: Text
+        type:  markdown
+
+    contactText:
+        label: Contact
+        type:  markdown
+
+    technologies:
+        label: Technologies
+        type: structure
+        modalsize: small
+        width: 1/3
+
+        fields:
+            icon:
+                label: icon
+                type: image
+
+            name:
+                label: Name
+                type:  text
+
+    languages:
+        label: Languages
+        type: structure
+        modalsize: small
+        width: 1/3
+
+        fields:
+            icon:
+                label: icon
+                type: image
+
+            name:
+                label: Name
+                type:  text
+
+    tools:
+        label: Tools
+        type: structure
+        modalsize: small
+        width: 1/3
+
+        fields:
+            icon:
+                label: icon
+                type: image
+
+            name:
+                label: Name
+                type:  text

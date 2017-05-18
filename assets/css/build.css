@@ -1,0 +1,927 @@
+/*
+Purpose: This is the main sass file where everything is imported into.
+Date: May 11 2017
+*/
+/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Correct the line height in all browsers.
+ * 3. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+/* Document
+   ========================================================================== */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  line-height: 1.15;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 3 */
+  -webkit-text-size-adjust: 100%;
+  /* 3 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+  margin: 0; }
+
+/**
+ * Add the correct display in IE 9-.
+ */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block; }
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */ }
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+a:active,
+a:hover {
+  outline-width: 0; }
+
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit; }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000; }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+video {
+  display: inline-block; }
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none; }
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */ }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+details,
+menu {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+canvas {
+  display: inline-block; }
+
+/**
+ * Add the correct display in IE.
+ */
+template {
+  display: none; }
+
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+[hidden] {
+  display: none; }
+
+/*
+Purpose: This file contains the styling variables for the web site.
+Date: May 11 2017
+*/
+/*
+This file contains the functions
+Date: Feb 9 2017
+*/
+/*
+Purpose: This function will calculate the REM size of a font
+Date: June 17 2016
+*/
+/*
+This file contains the mixins
+Date: June 17 2016
+*/
+/*
+Purpose: This mixin will build media queries
+Date: June 17 2016
+*/
+/*
+Purpose: This mixin will inherit the properties of the previous block or element
+Date: June 17 2016
+*/
+/*
+Purpose: This mixin will build a standalone element with no inheritance
+Date: June 17 2016
+*/
+/*
+Purpose: This function will create a font size with a fall back to pixels
+Date: June 17 2016
+*/
+/*
+Purpose: This mixin will make an element retain a specified aspect ration
+Author: Chris Coyier
+Source: https://css-tricks.com/snippets/sass/maintain-aspect-ratio-mixin/
+Date: Feb 11 2015
+*/
+/*
+Purpose: This mixin will create a material design box shadow.
+DateL: Dec 17 2016
+*/
+/*
+Purpose: This file contains the font family declerations for the needed
+    bundled fonts.
+Date: Dec 17 2016
+*/
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Material Icons"), local("MaterialIcons-Regular"), url("/../assets/fonts/MaterialIcons-Regular.ttf"); }
+
+@font-face {
+  font-family: Roboto;
+  src: local("Roboto"), local("Roboto-Thin.ttf"), url("/../assets/fonts/Roboto-Thin.ttf");
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: Roboto;
+  src: local("Roboto"), local("Roboto-ThinItalic.ttf"), url("/../assets/fonts/Roboto-ThinItalic.ttf");
+  font-weight: 100;
+  font-style: italic; }
+
+@font-face {
+  font-family: Roboto;
+  src: local("Roboto"), local("Roboto-Light.ttf"), url("/../assets/fonts/Roboto-Light.ttf");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: Roboto;
+  src: local("Roboto"), local("Roboto-LightItalic.ttf"), url("/../assets/fonts/Roboto-LightItalic.ttf");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: Roboto;
+  src: local("Roboto"), local("Roboto-Regular.ttf"), url("/../assets/fonts/Roboto-Regular.ttf");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: Roboto;
+  src: local("Roboto"), local("Roboto-Regular.ttf"), url("/../assets/fonts/Roboto-Regular.ttf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: Roboto;
+  src: local("Roboto"), local("Roboto-Italic.ttf"), url("/../assets/fonts/Roboto-Italic.ttf");
+  font-weight: 400;
+  font-style: italic; }
+
+@font-face {
+  font-family: Roboto;
+  src: local("Roboto"), local("Roboto-Italic.ttf"), url("/../assets/fonts/Roboto-Italic.ttf");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: Roboto;
+  src: local("Roboto"), local("Roboto-Medium.ttf"), url("/../assets/fonts/Roboto-Medium.ttf");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: Roboto;
+  src: local("Roboto"), local("Roboto-MediumItalic.ttf"), url("/../assets/fonts/Roboto-MediumItalic.ttf");
+  font-weight: 500;
+  font-style: italic; }
+
+@font-face {
+  font-family: Roboto;
+  src: local("Roboto"), local("Roboto-Bold.ttf"), url("/../assets/fonts/Roboto-Bold.ttf");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: Roboto;
+  src: local("Roboto"), local("Roboto-Bold.ttf"), url("/../assets/fonts/Roboto-Bold.ttf");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: Roboto;
+  src: local("Roboto"), local("Roboto-BoldItalic.ttf"), url("/../assets/fonts/Roboto-BoldItalic.ttf");
+  font-weight: 700;
+  font-style: italic; }
+
+@font-face {
+  font-family: Roboto;
+  src: local("Roboto"), local("Roboto-BoldItalic.ttf"), url("/../assets/fonts/Roboto-BoldItalic.ttf");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: Roboto;
+  src: local("Roboto"), local("Roboto-Black.ttf"), url("/../assets/fonts/Roboto-Black.ttf");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: Roboto;
+  src: local("Roboto"), local("Roboto-BlackItalic"), url("/../assets/fonts/Roboto-BlackItalic.ttf");
+  font-weight: 900;
+  font-style: italic; }
+
+/*
+Purpose: Partial file containing the base styling for all typography.
+Date: Dec 16 2016
+*/
+body {
+  color: white;
+  font-size: 18px;
+  font-size-adjust: 0.5;
+  font-family: 'Roboto';
+  text-rendering: optimizeLegibility; }
+  @media only screen and (max-width: 479px) {
+    body {
+      line-height: 1.25; } }
+  @media only screen and (min-width: 480px) and (max-width: 959px) {
+    body {
+      line-height: 1.375; } }
+  @media only screen and (min-width: 960px) {
+    body {
+      line-height: 1.375; } }
+
+a {
+  color: #00E9FF;
+  text-decoration: none;
+  cursor: pointer; }
+
+h1 {
+  font-size-adjust: 0.5; }
+  @media only screen and (max-width: 479px) {
+    h1 {
+      font-size: 37.332px;
+      line-height: 1.25; } }
+  @media only screen and (min-width: 480px) and (max-width: 959px) {
+    h1 {
+      font-size: 43.938px;
+      line-height: 1.125; } }
+  @media only screen and (min-width: 960px) {
+    h1 {
+      font-size: 56.826px;
+      line-height: 1.05; } }
+
+h2 {
+  font-size-adjust: 0.5; }
+  @media only screen and (max-width: 479px) {
+    h2 {
+      font-size: 31.104px;
+      line-height: 1.15384615; } }
+  @media only screen and (min-width: 480px) and (max-width: 959px) {
+    h2 {
+      font-size: 35.154px;
+      line-height: 1.25; } }
+  @media only screen and (min-width: 960px) {
+    h2 {
+      font-size: 42.642px;
+      line-height: 1.25; } }
+
+h3 {
+  font-size-adjust: 0.5; }
+  @media only screen and (max-width: 479px) {
+    h3 {
+      font-size: 25.92px;
+      line-height: 1.13636364; } }
+  @media only screen and (min-width: 480px) and (max-width: 959px) {
+    h3 {
+      font-size: 28.134px;
+      line-height: 1.25; } }
+  @media only screen and (min-width: 960px) {
+    h3 {
+      font-size: 31.986px;
+      line-height: 1.25; } }
+
+h4 {
+  font-size-adjust: 0.5; }
+  @media only screen and (max-width: 479px) {
+    h4 {
+      font-size: 21.6px;
+      line-height: 1.11111111; } }
+  @media only screen and (min-width: 480px) and (max-width: 959px) {
+    h4 {
+      font-size: 22.5px;
+      line-height: 1.22222222; } }
+  @media only screen and (min-width: 960px) {
+    h4 {
+      font-size: 23.994px;
+      line-height: 1.22222222; } }
+
+h5, h6 {
+  font-size-adjust: 0.5; }
+
+/*
+    Purpose: This file contains the partial styling for icons
+    Date: Dec 28 2016
+*/
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga'; }
+
+/*
+Purpose: This file sontains the styling for the app root component.
+Date: May 11 2017
+*/
+.app-root {
+  display: flex;
+  height: 100vh;
+  flex-direction: column; }
+
+/*
+Purpose: This file contains the stylings for all views components.
+Date: May 11 2017
+*/
+.view {
+  background: #212121;
+  padding: 32px 64px 128px 64px;
+  flex: 100%;
+  box-sizing: border-box; }
+  @media only screen and (max-width: 479px) {
+    .view {
+      padding: 32px 24px 128px 24px; } }
+  @media only screen and (min-width: 480px) and (max-width: 959px) {
+    .view {
+      padding: 32px 48px 128px 48px; } }
+
+/*
+Purpose: This file contains the styling for the footer component
+Date: May 17 2017
+*/
+.footer {
+  background: #171717;
+  padding: 64px;
+  text-align: center; }
+
+/*
+Purpose: This file contains the styling for the hero component
+Date: May 17 2017
+*/
+.hero {
+  position: relative;
+  height: 600px; }
+  .hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(1); }
+  .hero__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 1084px;
+    width: 100%;
+    padding: 0 64px;
+    z-index: 100;
+    box-sizing: border-box;
+    transform: translate(-50%, -50%); }
+    @media only screen and (max-width: 479px) {
+      .hero__text {
+        padding: 0 24px; } }
+    @media only screen and (min-width: 480px) and (max-width: 959px) {
+      .hero__text {
+        padding: 0 48px; } }
+  .hero__title {
+    margin-bottom: 8px; }
+  .hero__subtitle {
+    margin: 0;
+    color: #00E9FF;
+    font-size: 22px;
+    font-weight: 500; }
+  @media only screen and (max-width: 479px) {
+    .hero {
+      height: 300px; } }
+  @media only screen and (min-width: 480px) and (max-width: 959px) {
+    .hero {
+      height: 460px; } }
+
+/*
+Purpose: This file contains the styling for the buttons components
+Date: May 17 2017
+*/
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  margin: 0.8em 0;
+  background: #2b2b2b;
+  text-transform: uppercase;
+  transition: background 0.175s cubic-bezier(0.4, 0, 0.6, 1); }
+  .button i {
+    vertical-align: middle;
+    margin-right: 8px; }
+  .button:focus {
+    background: #2e2e2e; }
+  .button:active {
+    background: #303030; }
+
+/*
+Purpose: This contains the styling for the page content component.
+Date: May 17 2017
+*/
+.page-content {
+  max-width: 960px;
+  margin: auto; }
+  .page-content figure img {
+    width: 100%; }
+  .page-content__header {
+    position: relative;
+    display: inline-block;
+    font-weight: 400; }
+    .page-content__header:after {
+      content: "";
+      position: absolute;
+      width: 148px;
+      height: 4px;
+      bottom: -4px;
+      left: 0;
+      background: #00E9FF; }
+  .page-content__subtitle {
+    margin-top: 0;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7); }
+  .page-content__featured-image {
+    margin: 1em 0; }
+
+/*
+Purpose: This file contains the styles for the project list component.
+Date: May 16 2017
+*/
+.project-list {
+  display: flex;
+  max-width: 960px;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .project-list__header {
+    flex: 100%; }
+    .project-list__header h2 {
+      position: relative;
+      display: inline-block;
+      font-weight: 400; }
+      .project-list__header h2:after {
+        content: "";
+        position: absolute;
+        width: 148px;
+        height: 4px;
+        bottom: -4px;
+        left: 0;
+        background: #00E9FF; }
+
+/*
+Purpose: This is the styling for the project preview component.
+Date: May 16 2017
+*/
+.project-preview {
+  display: block;
+  max-width: 300px;
+  min-width: 270px;
+  margin: 0 0 32px 0;
+  cursor: pointer;
+  background-color: #2b2b2b;
+  overflow: hidden;
+  border-radius: 2px;
+  transition: background 0.175s cubic-bezier(0.4, 0, 0.6, 1); }
+  .project-preview:focus {
+    background: #2e2e2e; }
+  .project-preview:active {
+    background: #303030; }
+  .project-preview__featured-image {
+    position: relative;
+    height: 270px;
+    background: linear-gradient(240deg, #00E9FF, #00ffab); }
+    .project-preview__featured-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  .project-preview__source-available {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background: rgba(23, 23, 23, 0.75); }
+    .project-preview__source-available i {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white; }
+  .project-preview__details {
+    padding: 16px; }
+  .project-preview__title {
+    margin: 0 0 8px 0;
+    color: white; }
+  .project-preview__subtitle {
+    margin: 0 0 8px 0;
+    color: rgba(255, 255, 255, 0.7); }
+  .project-preview__tag-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    flex-wrap: wrap; }
+  .project-preview__tag {
+    margin: 0 8px 8px 0;
+    padding: 6px 16px;
+    font-size: 14px;
+    color: white;
+    background: #171717;
+    border-radius: 16px;
+    box-sizing: border-box; }
+
+/*
+Purpose: This file contains the styling for the technology grid component.
+Date: May 17 2017
+*/
+.technology-grid {
+  display: flex;
+  max-width: 960px;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .technology-grid__list {
+    padding: 0;
+    margin: 0;
+    min-width: 264px;
+    list-style: none; }
+  .technology-grid__list-header {
+    flex: 100%; }
+    .technology-grid__list-header h2 {
+      position: relative;
+      display: inline-block;
+      font-weight: 400; }
+      .technology-grid__list-header h2:after {
+        content: "";
+        position: absolute;
+        width: 148px;
+        height: 4px;
+        bottom: -4px;
+        left: 0;
+        background: #00E9FF; }
+
+/*
+Purpose: This file contains the styles for the technology entry component.
+Date: May 17 2017
+*/
+.technology-entry {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+  .technology-entry__icon {
+    display: block;
+    height: 60px;
+    padding: 4px;
+    margin: 0 16px 0 0;
+    object-fit: contain;
+    box-sizing: border-box; }

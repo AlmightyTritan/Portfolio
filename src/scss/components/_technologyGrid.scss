@@ -1,0 +1,44 @@
+/*
+Purpose: This file contains the styling for the technology grid component.
+Date: May 17 2017
+*/
+
+// technology-grid
+.technology-grid {
+    display: flex;
+    max-width: 960px;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    // technology-grid__list
+    @include element('list') {
+        padding: 0;
+        margin: 0;
+        min-width: 264px;
+        list-style: none;
+    }
+
+    // technology-grid__list-header
+    @include element('list-header') {
+        flex: 100%;
+
+        // The actual header
+        h2 {
+            position: relative;
+            display: inline-block;
+            font-weight: 400;
+
+            // Underline
+            &:after {
+                content: "";
+                position: absolute;
+                width: 148px;
+                height: 4px;
+                bottom: -4px;
+                left: 0;
+                background: $color-accent;
+            }
+        }
+    }
+}

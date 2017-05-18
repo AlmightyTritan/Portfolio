@@ -1,0 +1,27 @@
+title: Site
+
+pages: default
+
+fields:
+    title:
+        label: Title
+        type:  text
+
+    subtitle:
+        label: Subtitle
+        type:  text
+
+    heroImage:
+        label: Hero Image
+        type: image
+
+    description:
+        label: Description
+        type:  markdown
+        validate:
+          min: 4
+          max: 160
+
+    footer:
+        label: Footer
+        type:  markdown

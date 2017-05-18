@@ -1,0 +1,13 @@
+/*
+This file contains the functions
+Date: Feb 9 2017
+*/
+
+/*
+Purpose: This function will calculate the REM size of a font
+Date: June 17 2016
+*/
+@function calculateRem($size) {
+    $remSize: $size / 16px;
+    @return $remSize;
+}

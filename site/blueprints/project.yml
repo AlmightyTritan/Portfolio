@@ -1,0 +1,37 @@
+title: Page
+
+fields:
+    title:
+        label: Title
+        type:  text
+
+    subtitle:
+        label: Subtitle
+        type:  text
+
+    text:
+        label: Text
+        type:  markdown
+
+    externalLink:
+        label: External Link
+        type: url
+        width: 4/5
+
+    openSource:
+        label: Is the project open source?
+        type: toggle
+        text: yes/no
+        default: false
+        width: 1/5
+
+    featuredImage:
+        label: Featured Image
+        type: image
+        width: 1/2
+
+    tags:
+        label: Tags
+        type: tags
+        lower: true
+        width: 1/2

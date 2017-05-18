@@ -1,0 +1,21 @@
+/*
+Purpose: This file contains the stylings for all views components.
+Date: May 11 2017
+*/
+
+.view {
+    background: $color-background;
+    padding: 32px 64px 128px 64px;
+    flex: 100%;
+    box-sizing: border-box;
+
+    // Small Breakpoint
+    @include breakpoint('small') {
+        padding: 32px 24px 128px 24px;
+    }
+
+    // Medium Breakpoint
+    @include breakpoint('medium') {
+        padding: 32px 48px 128px 48px;
+    }
+}

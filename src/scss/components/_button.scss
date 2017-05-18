@@ -1,0 +1,30 @@
+/*
+Purpose: This file contains the styling for the buttons components
+Date: May 17 2017
+*/
+
+// button
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 0.8em 0;
+    background: lighten($color-background, 4);
+    text-transform: uppercase;
+    transition: background 0.175s $curve-sharp;
+
+    // Icons
+    i {
+        vertical-align: middle;
+        margin-right: 8px;
+    }
+
+    // Focus
+    &:focus {
+        background: lighten($color-background, 5);
+    }
+
+    // Active
+    &:active {
+        background: lighten($color-background, 6);
+    }
+}

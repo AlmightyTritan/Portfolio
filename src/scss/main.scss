@@ -1,0 +1,27 @@
+/*
+Purpose: This is the main sass file where everything is imported into.
+Date: May 11 2017
+*/
+
+// Util
+@import 'util/normalize';
+@import 'util/variables';
+@import 'util/functions';
+@import 'util/mixins';
+
+// Partials
+@import 'partials/fonts';
+@import 'partials/typography';
+@import 'partials/iconography';
+
+// Components
+@import 'components/appRoot';
+@import 'components/view';
+@import 'components/footer';
+@import 'components/hero';
+@import 'components/button';
+@import 'components/pageContent';
+@import 'components/projectList';
+@import 'components/projectPreview';
+@import 'components/technologyGrid';
+@import 'components/technologyEntry';

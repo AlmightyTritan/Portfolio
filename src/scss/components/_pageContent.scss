@@ -1,0 +1,47 @@
+/*
+Purpose: This contains the styling for the page content component.
+Date: May 17 2017
+*/
+
+// page-content
+.page-content {
+    max-width: 960px;
+    margin: auto;
+
+    // Figure
+    figure {
+        img {
+            width: 100%;
+        }
+    }
+
+    // page-content__header
+    @include element('header') {
+        position: relative;
+        display: inline-block;
+        font-weight: 400;
+
+        // Underline
+        &:after {
+            content: "";
+            position: absolute;
+            width: 148px;
+            height: 4px;
+            bottom: -4px;
+            left: 0;
+            background: $color-accent;
+        }
+    }
+
+    // page-content__subtitle
+    @include element('subtitle') {
+        margin-top: 0;
+        font-weight: 400;
+        color: $color-text-secondary;
+    }
+
+    // page-content__featured-image
+    @include element('featured-image') {
+        margin: 1em 0;
+    }
+}

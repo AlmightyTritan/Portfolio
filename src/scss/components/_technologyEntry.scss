@@ -1,0 +1,26 @@
+/*
+Purpose: This file contains the styles for the technology entry component.
+Date: May 17 2017
+*/
+
+// technology-entry
+.technology-entry {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    // technology-entry__icon
+    @include element('icon') {
+        display: block;
+        height: 60px;
+        padding: 4px;
+        margin: 0 16px 0 0;
+        object-fit: contain;
+        box-sizing: border-box;
+    }
+
+    // technology-entry__name
+    @include element('name') {
+
+    }
+}
