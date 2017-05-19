@@ -1,0 +1,28 @@
+Title: Tristan Chatman
+
+----
+
+Author: Tristan Chatman
+
+----
+
+Description: Tristan Chatman's portfolio site. A list of works, contact info, and resume are available within.
+
+----
+
+Copyright: 
+
+----
+
+Footer: 
+
+Copyright Tristan Chatman
+(link: https://github.com/AlmightyTritan/Portfolio text: Source Code)
+
+----
+
+Heroimage: ma1q70da19ry.png
+
+----
+
+Subtitle: Ace Developer with a penchant for design

@@ -7,10 +7,12 @@
 # ------------
 Icon
 .DS_Store
+deploy-config.php
 
 # Temporary files
 # ---------------
 /content/*
+!/content/site.txt
 /thumbs/*
 !/thumbs/index.html
 /site/cache/*
