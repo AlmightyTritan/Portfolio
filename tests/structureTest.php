@@ -1,15 +1,12 @@
 <?php
 define('DS', DIRECTORY_SEPARATOR);
 
-// Namespace
-use PHPUnit\Framework\TestCase;
-
 /**
  * This test class will test various miscelanious cases.
  *
  * @since May 19 2017
  */
-class StructureTest extends TestCase {
+class StructureTest extends PHPUnit_Framework_TestCase {
     /**
      * This test makes sure the required files and dirtectories exist.
      *
