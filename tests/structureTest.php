@@ -1,5 +1,6 @@
 <?php
-require_once "vendor/autoload.php";
+define('DS', DIRECTORY_SEPARATOR);
+require(__DIR__ . DS . '..' . DS . 'vendor' .DS . 'autoload.php');
 
 /**
  * This test class will test various miscelanious cases.
