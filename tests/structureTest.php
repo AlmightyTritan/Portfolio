@@ -1,5 +1,5 @@
 <?php
-require_once 'PHPUnit/Autoload.php';
+require_once "vendor/autoload.php";
 
 /**
  * This test class will test various miscelanious cases.
